@@ -1,0 +1,52 @@
+- type: entity
+  id: M14TurnerOff_and_On
+  name: рубильник
+  parent: BaseWallmount
+  description: Маленький рубильник который используется для всего и вся!
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: StationAiWhitelist
+    - type: Clickable
+    - type: InteractionOutline 
+    - type: Sprite
+      drawdepth: -1
+      sprite: _Metro14/Structures/Machines/turner.rsi
+      layers:
+        - state: switch-off
+          map: ["enabled", "enum.TwoWayLeverState.Middle"]
+    - type: TwoWayLever
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.TwoWayLeverVisuals.State:
+          enabled:
+            Right: { state: switch-fwd }
+            Middle: { state: switch-off }
+            Left: { state: switch-rev }
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - type: Construction
+      graph: LeverGraph
+      node: LeverNode
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: DeviceLinkSource
+      ports:
+        - Left
+        - Right
+        - Middle
+    - type: Tag
+      tags:
+      - Structure
