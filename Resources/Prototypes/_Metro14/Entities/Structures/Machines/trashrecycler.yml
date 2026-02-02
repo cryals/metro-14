@@ -9,7 +9,6 @@
     volume: -5
     range: 5
     sound:
-      # TODO: https://freesound.org/people/derjuli/sounds/448133/ CC-NC-
       path: /Audio/Ambience/Objects/circular_saw.ogg
   - type: Fixtures
     fixtures:
@@ -30,9 +29,9 @@
         layer:
         - Opaque
         - BulletImpassable
-  
   - type: DeviceLinkSink
     ports:
+      - Reverse
       - Forward
       - Off
   - type: Sprite
@@ -44,7 +43,7 @@
   - type: CollideMaterialReclaimer
   - type: MaterialReclaimer
     enabled: false
-    scaleProcessSpeed: false #instant!
+    scaleProcessSpeed: false
     minimumProcessDuration: 0
     whitelist:
       components:
