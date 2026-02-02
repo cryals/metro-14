@@ -117,6 +117,21 @@
   - type: InstantAction
     event: !type:SpecialInvisibilityActionEvent
 
+# Способность затумания разума
+- type: entity
+  parent: BaseAction
+  id: ActionSpecialFog
+  name: Затумание разума
+  description: Люди в пределах 10 тайлов от вас начинают нести бред
+  components:
+  - type: Action
+    useDelay: 35
+    itemIconStyle: BigAction
+    icon: _Metro14/Interface/Actions/SpecialAbilities/hallucinations.png
+    checkCanInteract: false
+  - type: InstantAction
+    event: !type:SpecialFogActionEvent
+
 # Данная способность необходима для переключения скина наблюдателя.
 # Дата добавления 11.01.2026
 # По вопросам работы компонента (системы, что обрабатывает компонент) можно обратиться к BeatusCrow в дискорд.
