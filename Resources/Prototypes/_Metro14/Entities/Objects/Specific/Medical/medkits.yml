@@ -1,0 +1,195 @@
+- type: entity
+  parent: ChemicalMedipen
+  id: M14EmergencyMedipenInaprovaline
+  name: Кардио-Стимулятор
+  description: Широко используемый для купирования удушья при критических состояниях и уменьшения кровотечения.
+  components:
+  - type: Sprite
+    sprite: _Metro14/Objects/Specific/Medical/pin.rsi
+    layers:
+    - state: trime
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: trime_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 10
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: 10
+    activeModeProtoId: M14BaseHyposprayMode
+    allowedModes:
+    - M14HyposprayInjectMode
+  - type: Item
+    size: Small 
+  - type: Tag
+    tags:
+    - M14Medipen
+
+- type: entity
+  parent: ChemicalMedipen
+  id: M14EmergencyMedipenRadiation
+  name: Радиозащитное средство 
+  description: Принимается содержимое щприца за 15—20 мин. до предполагаемого облучения.
+  components:
+  - type: Sprite
+    sprite: _Metro14/Objects/Specific/Medical/pin.rsi
+    layers:
+    - state: trime3
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: trime_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: PotassiumIodide
+          Quantity: 10
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: 10
+    activeModeProtoId: M14BaseHyposprayMode
+    allowedModes:
+    - M14HyposprayInjectMode
+  - type: Item
+    size: Small 
+  - type: Tag
+    tags:
+    - M14Medipen
+
+- type: entity
+  parent: ChemicalMedipen
+  id: M14EmergencyMedipenMorphine
+  name: Противоболевое средство
+  description: Применяется при переломах или обширных ранах, не поможет при ожогах.
+  components:
+  - type: Sprite
+    sprite: _Metro14/Objects/Specific/Medical/pin.rsi
+    layers:
+    - state: trime4
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: trime_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: morphine
+          Quantity: 10
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: 10
+    activeModeProtoId: M14BaseHyposprayMode
+    allowedModes:
+    - M14HyposprayInjectMode
+  - type: Item
+    size: Small 
+  - type: Tag
+    tags:
+    - M14Medipen
+
+- type: entity
+  parent: [ChemicalMedipen, M14EmergencyMedipenMorphine]
+  id: M14EmergencyMedipenBigStorageMorphine
+  name: Противоболевое средство 
+  description: Большая доза противоболевого средства. Применяется при переломах или обширных ранах, не поможет при ожогах.
+  suffix: Больше морфина
+  components:
+  - type: Sprite
+    sprite: _Metro14/Objects/Specific/Medical/pin.rsi
+    layers:
+    - state: trime2
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: trime_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: morphine
+          Quantity: 15
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: 15
+    activeModeProtoId: M14BaseHyposprayMode
+    allowedModes:
+    - M14HyposprayInjectMode
+  - type: Item
+    size: Small       
+  - type: Tag
+    tags:
+    - M14Medipen
+
+- type: entity
+  id: M14Medkit
+  name: аптечка Аи-2
+  description: это компактный советский набор средств первой медицинской помощи, разработанный для само- и взаимопомощи при ранениях, ожогах, воздействии радиоактивных, отравляющих (ФОВ) или бактериальных веществ.
+  parent: [ BaseStorageItem, BaseBagOpenClose]
+  components:
+  - type: Sprite
+    sprite: _Metro14/Objects/Specific/Medical/medkit.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+  - type: Appearance
+  - type: Item
+    sprite: _Metro14/Objects/Specific/Medical/medkit.rsi
+    size: Normal
+  - type: Storage
+    grid:
+    - 0,0,6,1
+    whitelist:
+      tags:
+        - M14Medipen
+
+
+- type: entity
+  id: M14MedkitFilledFull
+  parent: M14Medkit
+  suffix: Заполненный, Весь
+  components:
+  - type: StorageFill
+    contents:
+      - id: M14EmergencyMedipenInaprovaline
+        amount: 2
+      - id: M14EmergencyMedipenRadiation
+        amount: 2  
+      - id: M14EmergencyMedipenMorphine
+        amount: 2
+      - id: M14EmergencyMedipenBigStorageMorphine
+        amount: 1
+
+- type: entity
+  id: M14MedkitFilledRandom
+  parent: M14Medkit
+  suffix: Заполненный, Рандомно
+  components:
+  - type: StorageFill
+    contents:
+      - id: M14EmergencyMedipenInaprovaline
+      - id: M14EmergencyMedipenMorphine
+      - id: M14EmergencyMedipenRadiation
+        prob: 0.60
+      - id: M14EmergencyMedipenInaprovaline
+      - id: M14EmergencyMedipenRadiation
+      - id: M14EmergencyMedipenMorphine
+        prob: 0.10
+      - id: M14EmergencyMedipenBigStorageMorphine
+        prob: 0.10

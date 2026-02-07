@@ -233,3 +233,18 @@
         reagents:
         - ReagentId: Arachnocyte
           Quantity: 30
+
+- type: entity
+  parent: M14ChemistryEmptyVial
+  id: M14MorphinelinChemistryVial
+  suffix: Morphine
+  components:
+  - type: Label
+    currentLabel: reagent-name-morphine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: morphine
+          Quantity: 30

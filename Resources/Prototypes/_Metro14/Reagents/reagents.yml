@@ -140,3 +140,47 @@
         damage:
           types:
             Poison: 1.0
+
+- type: reagent
+  id: morphine
+  name: reagent-name-morphine
+  group: Medicine
+  desc: reagent-desc-morphine
+  physicalDesc: reagent-physical-desc-morphine
+  flavor: medicine
+  color: "#bce1fa"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.5
+      effects:
+      - !type:EvenHealthChange
+        damage:
+          Brute: -4.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: morphine
+          min: 30
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1.5
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: morphine
+          min: 30
+        probability: 0.02
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: morphine
+          min: 30
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        conditions:
+        - !type:ReagentCondition
+          reagent: morphine
+          min: 5       
+      - !type:Drunk

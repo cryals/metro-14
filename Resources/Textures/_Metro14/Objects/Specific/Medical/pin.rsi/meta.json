@@ -1,0 +1,26 @@
+﻿{
+  "version": 1,
+    "license": "Metro-14 CLA",
+    "copyright": "Create by Yunite helping loginsirs",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "trime"
+    },
+    {
+      "name": "trime2"
+    },
+    {
+      "name": "trime3"
+    },
+    {
+      "name": "trime4"
+    },
+    {
+      "name": "trime_empty"
+    }
+  ]
+}
