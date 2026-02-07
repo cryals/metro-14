@@ -41,7 +41,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using ItemToggleMeleeWeaponComponent = Content.Shared.Item.ItemToggle.Components.ItemToggleMeleeWeaponComponent;
-using Content.Shared._Metro14.Virus; //Metro14
 
 namespace Content.Shared.Weapons.Melee;
 
@@ -518,7 +517,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, null);
             RaiseLocalEvent(meleeUid, missEvent);
 
-            RaiseLocalEvent(new VirusCustomMeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, null)); //Metro14
 
             _meleeSound.PlaySwingSound(user, meleeUid, component);
             return;
@@ -530,7 +528,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var hitEvent = new MeleeHitEvent(new List<EntityUid> { target.Value }, user, meleeUid, damage, null);
         RaiseLocalEvent(meleeUid, hitEvent);
 
-        RaiseLocalEvent(new VirusCustomMeleeHitEvent(new List<EntityUid> { target.Value }, user, meleeUid, damage, null)); //Metro14
 
         if (hitEvent.Handled)
             return;
@@ -624,7 +621,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, direction);
             RaiseLocalEvent(meleeUid, missEvent);
 
-            RaiseLocalEvent(new VirusCustomMeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, direction)); //Metro14
 
             // immediate audio feedback
             _meleeSound.PlaySwingSound(user, meleeUid, component);
@@ -675,7 +671,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var hitEvent = new MeleeHitEvent(targets, user, meleeUid, damage, direction);
         RaiseLocalEvent(meleeUid, hitEvent);
 
-        RaiseLocalEvent(new VirusCustomMeleeHitEvent(targets, user, meleeUid, damage, direction)); //Metro14
 
         if (hitEvent.Handled)
             return true;
