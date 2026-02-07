@@ -237,10 +237,10 @@
 - type: entity
   parent: M14ChemistryEmptyVial
   id: M14MorphinelinChemistryVial
-  suffix: Morphine Морфин
+  suffix: Morphine
   components:
   - type: Label
-    currentLabel: reagent-name-aquacylin
+    currentLabel: reagent-name-morphine
   - type: SolutionContainerManager
     solutions:
       drink:

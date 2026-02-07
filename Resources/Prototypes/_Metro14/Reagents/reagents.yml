@@ -151,6 +151,7 @@
   color: "#bce1fa"
   metabolisms:
     Medicine:
+      metabolismRate: 0.5
       effects:
       - !type:EvenHealthChange
         damage:
@@ -181,6 +182,5 @@
         conditions:
         - !type:ReagentCondition
           reagent: morphine
-          min: 5
-          time: 0.1        
+          min: 5       
       - !type:Drunk
