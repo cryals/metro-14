@@ -76,3 +76,15 @@
       amount: 1
   products:
     Arachnocyte: 2
+
+# Морфин. его получают с помощью биосинтеза опиумного мака.
+# Но в метро такое не возможно, поэтому, сделаем вид, что все ок.
+- type: reaction
+  id: biosynthesisReactionMorphine
+  reactants:
+    Inaprovaline:
+      amount: 2
+    Aquacylin:
+      amount: 2
+  products:
+    morphine: 3

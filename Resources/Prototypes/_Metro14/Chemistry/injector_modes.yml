@@ -1,0 +1,53 @@
+﻿- type: injectorMode
+  id: M14BaseInjectMode
+  name: M14-Base-Inject-Mode 
+
+- type: injectorMode
+  id: M14BaseDynamicMode
+  name: M14-Base-Dynamic-Mode
+
+- type: injectorMode
+  id: M14BaseHyposprayMode
+  name: M14-Base-Hypospray-Mode
+  injectSound: /Audio/_Metro14/Items/Specific/Medical/medkit.ogg
+  injectPopupTarget: injector-component-feel-prick-message
+  injectOnUse: true
+  delayPerVolume: 0
+  transferAmounts:
+  - 5
+
+- type: injectorMode
+  id: M14BaseInstantHyposprayMode
+  name: M14-Base-Instant-Hypospray-Mode
+  injectSound: /Audio/_Metro14/Items/Specific/Medical/medkit.ogg
+  mobTime: 0
+  transferAmounts:
+  - 5
+
+- type: injectorMode
+  id: M14HyposprayInjectMode
+  name: M14-HyposprayInject-Mode
+  injectSound: /Audio/_Metro14/Items/Specific/Medical/medkit.ogg
+  injectOnUse: true
+  mobTime: 0
+  transferAmounts:
+  - 5
+
+- type: injectorMode
+  id: M14HyposprayDynamicMode
+  name: M14-Hypospray-Dynamic-Mode
+  injectSound: /Audio/_Metro14/Objects/Specific/Medical/medkit.ogg
+  injectOnUse: true
+  mobTime: 0
+  transferAmounts:
+  - 5
+
+- type: injectorMode
+  id: M14HypopenDynamicMode
+  name: M14-Hypopen-Dynamic-Mode
+  injectSound: /Audio/_Metro14/Objects/Specific/Medical/medkit.ogg
+  injectOnUse: true
+  containerDrawTime: 0.75
+  mobTime: 0
+  transferAmounts:
+  - 5
