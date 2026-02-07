@@ -19,7 +19,7 @@
 - type: injectorMode
   id: M14BaseInstantHyposprayMode
   name: M14-Base-Instant-Hypospray-Mode
-  injectSound: /Audio/_Metro14/Items/Specific/Medical/medkit.ogg
+  injectSound: /Audio/_Metro14/Objects/Specific/Medical/medkit.ogg
   mobTime: 0
   transferAmounts:
   - 5
@@ -27,7 +27,7 @@
 - type: injectorMode
   id: M14HyposprayInjectMode
   name: M14-HyposprayInject-Mode
-  injectSound: /Audio/_Metro14/Items/Specific/Medical/medkit.ogg
+  injectSound: /Audio/_Metro14/Objects/Specific/Medical/medkit.ogg
   injectOnUse: true
   mobTime: 0
   transferAmounts:
