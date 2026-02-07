@@ -30,3 +30,20 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+
+
+- type: entity
+  parent: BaseMagazineBoxLightRifle
+  id: M14MagazineBoxLightRifleBigEmpty
+  name: Блок довоенных патрон 
+  suffix: пустой
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
