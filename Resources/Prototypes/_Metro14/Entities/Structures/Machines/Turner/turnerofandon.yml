@@ -2,7 +2,7 @@
   id: M14TurnerOff_and_On
   name: рубильник
   parent: BaseWallmount
-  description: Маленький рубильник который используется для всего и вся!
+  description: Маленький рубильник, который используется для всего и вся!
   placement:
     mode: SnapgridCenter
   components:

@@ -2,7 +2,7 @@
   id: M14Recycler
   parent: BaseMachinePowered
   name: станок
-  description: Огромная штука, которая погубила не одини палецы техников
+  description: Огромная штука, которая погубила не один палец техники 
   components:
   - type: AmbientSound
     enabled: false
