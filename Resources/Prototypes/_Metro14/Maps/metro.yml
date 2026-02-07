@@ -1,7 +1,7 @@
 - type: gameMap
   id: Metro14
   mapName: 'Metro'
-  mapPath: /Maps/_Metro14/Metro/Metro113.yml
+  mapPath: /Maps/_Metro14/Metro/MetroV128.yml
   minPlayers: 0
   maxPlayers: 200
   stations:
@@ -24,7 +24,7 @@
           M14HeadOfHansa: [ 1, 1 ]
           M14TradeAgentHansa: [ 1, 1 ]
           M14OfficerHansa: [ 9, 9 ]
-          M14CivilianHansa: [ 10, 10 ]
+          M14CivilianHansa: [ 5, 5 ]
           # Sparta
           M14HeadOfSparta: [ 1, 1 ]
           M14LieutenantOfHeadOfSparta: [ 1, 1 ]
