@@ -79,11 +79,11 @@
 - type: npcTraderItemForCatalog
   id: NPC_Trader_Offer_Ashot
   name: Ашот
-  description: Ну хоть как-то отстреляться.
+  description: Ну хоть как-то отстреляться. 10 пулек
   givingItems:
     M14WeaponShotgunAshot: 1
   takingItems:
-    CartridgeLightRifle: 26
+    M14MagazineBoxLightRifleBig10: 1
 
 - type: npcTraderItemForCatalog
   id: NPC_Trader_Offer_Ashot_sales
@@ -186,11 +186,12 @@
 - type: npcTraderItemForCatalog
   id: NPC_Trader_Ashot_to_gra11
   name: Дробные патроны
-  description: Ауауау
+  description: Вообщем, 3 пульки и считай целый кошелек на 30 патронов!
   givingItems:
     CartridgeLightRifle: 3
   takingItems:
-    ShellShotgun: 6
+    ShellShotgun: 2
+    M14MagazineBoxLightRifleBigEmpty: 1
 
 - type: npcTraderItemForCatalog
   id: NPC_Trader_Sparta_Start
