@@ -41,7 +41,7 @@
        - id: MaterialCardboard10
        - id: CombatKnife
        - id: DrinkWaterBottleFull
-       - id: FoodBurgerHuman
+       - id: M14ClothingUniformJumpsuitGreybrownJunk
     - !type:AllSelector
       weight: 14
       children: 
@@ -60,6 +60,13 @@
       weight: 22
       children: 
        - id: MaterialCloth10
+    - !type:AllSelector
+      weight: 32
+      children: 
+       - id: ClothingHeadBandSkull
+       - id: ClothingMaskBandSkull
+       - id: M14ClothingEyesGlassesSunglasses
+       - id: M14ClothingUniformJumpsuitHansaSoldier
 
 - type: entity
   id: M14ClosetMaintenanceFilledRandom
