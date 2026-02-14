@@ -1,0 +1,9 @@
+#- type: virus
+#  id: TestVirusGenericTemplate
+#  name: pupupu-new-test-virus-name
+#  desc: pupupu-new-test-virus-desc
+#  componentForCarrier: TestInfectedPlagueComponent
+#  componentForInfectedObjects: TestInfectedItemPlagueComponent
+#  size: 0.1
+#  distributionMethod:
+#    - Touch
