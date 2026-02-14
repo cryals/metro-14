@@ -12,7 +12,8 @@
   - type: Sprite
     sprite: _Metro14/RoomSpawner/room_icon.rsi
     icon: icon
-    snapCardinals: true
+    snapCardinals: false
+    noRot: false
 
 #- type: entity
 #  parent: M14BaseRoomSpawner
