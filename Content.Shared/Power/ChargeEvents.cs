@@ -42,6 +42,14 @@ public readonly record struct ChargeChangedEvent(float CurrentCharge, float Delt
 [ByRefEvent]
 public record struct BatteryStateChangedEvent(BatteryState OldState, BatteryState NewState);
 
+// Metro14 Frequency Radio
+/// <summary>
+/// Raised every update tick to notify all entities to check current charge
+/// may, used for "Peep" sound when charge go low.
+/// </summary>
+public record struct BatteryUpdateChargeEvent(float CurrentCharge, float CurrentChargeRate);
+// Metro14 Frequency Radio
+
 /// <summary>
 /// Raised to calculate a predicted battery's recharge rate.
 /// Subscribe to this to offset its current charge rate.

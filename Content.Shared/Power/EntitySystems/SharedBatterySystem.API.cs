@@ -1,4 +1,5 @@
 using Content.Shared.Power.Components;
+using Content.Shared.PowerCell.Components; // Metro14 Frequency Radio
 using JetBrains.Annotations;
 
 namespace Content.Shared.Power.EntitySystems;
@@ -144,10 +145,20 @@ public abstract partial class SharedBatterySystem
 
         var charge = GetCharge(ent);
 
+        // Metro14 Frequency Radio UPDATE
+        var level = GetChargeLevel(ent);
+        // Metro14 Frequency Radio UPDATE
+
         if (charge >= ent.Comp.MaxCharge)
             newState = BatteryState.Full;
         else if (charge == 0f)
             newState = BatteryState.Empty;
+
+        // Metro14 Frequency Radio UPDATE
+        var parent = Transform(ent).ParentUid;
+        if (HasComp<PowerCellSlotComponent>(parent))
+            RaiseLocalEvent(parent,  new BatteryUpdateChargeEvent(level, ent.Comp.ChargeRate)); // YEY!
+        // Metro14 Frequency Radio UPDATE
 
         if (oldState == newState)
             return;
