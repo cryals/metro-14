@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "Metro-14 CLA",
+  "copyright": "Created by loginsirs",
+  "size": {
+    "x": 608,
+    "y": 608
+  },
+  "states": [
+    {
+      "name": "room_19x19"
+    }
+  ]
+}
