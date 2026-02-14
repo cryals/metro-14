@@ -28,10 +28,12 @@ public sealed partial class PowerCellSystem
     [PublicAPI]
     public void SetDrawRate(Entity<PowerCellDrawComponent?> ent, float newDrawRate)
     {
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(ent, ref ent.Comp) || MathHelper.CloseToPercent(ent.Comp.DrawRate, newDrawRate))
             return;
 
         ent.Comp.DrawRate = newDrawRate;
+        Dirty(ent);
+
         if (TryGetBatteryFromSlot(ent.Owner, out var battery))
             _battery.RefreshChargeRate(battery.Value.AsNullable());
     }
