@@ -1,0 +1,16 @@
+- type: entity
+  parent: PortableGeneratorJrPacman
+  id: M14PortableGenerator
+  suffix: Сварочное топливо, 8 kW
+  components:
+    - type: FuelGenerator
+      targetPower: 5000
+      minTargetPower: 4000
+      optimalPower: 8000
+      maxTargetPower: 8000
+      optimalBurnRate: 0.05555555
+      fuelEfficiencyConstant: 0.3
+    - type: SolutionContainerManager
+      solutions:
+        tank:
+          maxVol: 100

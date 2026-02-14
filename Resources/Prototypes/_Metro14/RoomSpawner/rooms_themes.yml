@@ -1,105 +1,205 @@
+#- type: Tag
+#  id: Lab_31_4x4
+#
+#- type: Tag
+#  id: Lab_31_5x5
 - type: Tag
-  id: Lab_31_4x4
+  id: TechnicalTunnels_5x5
 
 - type: Tag
-  id: Lab_31_5x5
-
+  id: TechnicalTunnels_19x19
+#
 # Small for storehouse in Lab № 31
 # - 4x4
-- type: dungeonRoom
-  id: Lab_31_4x4_1
-  size: 4,4
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 0,12
-  tags:
-    - Lab_31_4x4
+#- type: dungeonRoom
+#  id: Lab_31_4x4_1
+#  size: 4,4
+#  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+#  offset: 0,12
+#  tags:
+#    - Lab_31_4x4
+#
+#- type: dungeonRoom
+#  id: Lab_31_4x4_2
+#  size: 4,4
+#  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+#  offset: 5,12
+#  tags:
+#    - Lab_31_4x4
+#
+#- type: dungeonRoom
+#  id: Lab_31_4x4_Plug
+#  size: 4,4
+#  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+#  offset: 10,12
+#  tags:
+#    - Lab_31_4x4
 
+# Комнаты 5x5 для простых техничек в метро.
 - type: dungeonRoom
-  id: Lab_31_4x4_2
-  size: 4,4
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 5,12
-  tags:
-    - Lab_31_4x4
-
-- type: dungeonRoom
-  id: Lab_31_4x4_Plug
-  size: 4,4
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 10,12
-  tags:
-    - Lab_31_4x4
-
-# Medium for Lab № 31
-# - 5x5
-- type: dungeonRoom
-  id: Lab_31_5x5_1
+  id: TechnicalTunnels_5x5_1
   size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
   offset: 0,0
   tags:
-    - Lab_31_5x5
+    - TechnicalTunnels_5x5
 
 - type: dungeonRoom
-  id: Lab_31_5x5_2
+  id: TechnicalTunnels_5x5_2
   size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
   offset: 6,0
   tags:
-    - Lab_31_5x5
+    - TechnicalTunnels_5x5
 
 - type: dungeonRoom
-  id: Lab_31_5x5_3
+  id: TechnicalTunnels_5x5_3
   size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
   offset: 12,0
   tags:
-    - Lab_31_5x5
+    - TechnicalTunnels_5x5
 
 - type: dungeonRoom
-  id: Lab_31_5x5_4
+  id: TechnicalTunnels_5x5_4
   size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
   offset: 18,0
   tags:
-    - Lab_31_5x5
+    - TechnicalTunnels_5x5
 
 - type: dungeonRoom
-  id: Lab_31_5x5_5
+  id: TechnicalTunnels_5x5_5
   size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 0,6
-  tags:
-    - Lab_31_5x5
-
-- type: dungeonRoom
-  id: Lab_31_5x5_6
-  size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 6,6
-  tags:
-    - Lab_31_5x5
-
-- type: dungeonRoom
-  id: Lab_31_5x5_7
-  size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 12,6
-  tags:
-    - Lab_31_5x5
-
-- type: dungeonRoom
-  id: Lab_31_5x5_8
-  size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
-  offset: 18,6
-  tags:
-    - Lab_31_5x5
-
-- type: dungeonRoom
-  id: Lab_31_5x5_Plug
-  size: 5,5
-  atlas: /Maps/_Metro14/RoomSpawner/Themes/Test/pool_rooms.yml
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
   offset: 24,0
   tags:
-    - Lab_31_5x5
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_6
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 30,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_7
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 36,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_8
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 42,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_9
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 48,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_10
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 54,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_11
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 60,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_12
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 66,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_13
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 72,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_14
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 78,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_15
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 84,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_16
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 90,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_17
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 96,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_18
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 102,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_19
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 108,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_5x5_20
+  size: 5,5
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 114,0
+  tags:
+    - TechnicalTunnels_5x5
+
+- type: dungeonRoom
+  id: TechnicalTunnels_19x19_1
+  size: 19,19
+  atlas: /Maps/_Metro14/RoomSpawner/Themes/TechnicalTunnels/it_is_work.yml
+  offset: 0,6
+  tags:
+    - TechnicalTunnels_19x19

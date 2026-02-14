@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "Metro-14 CLA",
+  "copyright": "Melonnnnnn",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "switch"
+    },
+    {
+      "name": "switch-fwd"
+    },
+    {
+      "name": "switch-off"
+    },
+    {
+      "name": "switch-rev"
+    }
+  ]
+}

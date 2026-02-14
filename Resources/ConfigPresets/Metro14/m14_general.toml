@@ -1,5 +1,5 @@
 [game]
-hostname = "🚇 Metro14 - ЗБТ ☣️"
+hostname = "🚇 Metro14 - ОБТ ☣️"
 desc = "Первый русскоязычный сервер по вселенной Metro 2033 с повышенным уровнем РП."
 maxplayers = 130
 soft_max_players = 120
@@ -44,7 +44,7 @@ limit = 25.0
 max_updates = 300
 
 [whitelist]
-enabled = true
+enabled = false
 prototype_list = "basicWhitelist"
 
 [vote]
@@ -62,4 +62,4 @@ maximum_width = 26
 see_own_notes = false
 
 [hub]
-advertise = false
+advertise = true
