@@ -20,6 +20,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: ActiveListener
   - type: PowerCellDraw
@@ -64,6 +65,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: PowerCellDraw
   - type: ItemSlots
@@ -106,6 +108,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: PowerCellDraw
   - type: ItemSlots
@@ -148,6 +151,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: PowerCellDraw
   - type: ItemSlots
@@ -190,6 +194,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: PowerCellDraw
   - type: ItemSlots
@@ -232,6 +237,7 @@
       path: /Audio/Effects/beep1.ogg
     interferenceSounds:
       collection: Inteferentions
+    speakType: Whisper
     lowDrawRate: 0.5
   - type: PowerCellDraw
   - type: ItemSlots
