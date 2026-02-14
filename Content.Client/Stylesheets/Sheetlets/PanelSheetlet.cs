@@ -1,5 +1,6 @@
 using Content.Client.Stylesheets.SheetletConfigs;
 using Robust.Client.Graphics;
+using Robust.Client.ResourceManagement; // Metro14 Frequency Radio
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using static Content.Client.Stylesheets.StylesheetHelpers;
@@ -30,9 +31,19 @@ public sealed class PanelSheetlet<T> : Sheetlet<T> where T : PalettedStylesheet,
             BorderColor = sheet.ButtonPalette.Base,
             BorderThickness = new(2)
         };
-
+		
+		// Metro14 Frequency Radio
+        var radioTexture = new StyleBoxTexture
+        {
+            Texture = ResCache.GetResource<TextureResource>("/Textures/_Metro14/Interface/UITextures/FrequencyRadio/yellow.png"),
+        };
+        // Metro14 Frequency Radio
         return
         [
+        // Metro14 Frequency Radio
+            E<PanelContainer>().Class("RadioFrequency").Panel(radioTexture),
+		// Metro14 Frequency Radio
+
             E<PanelContainer>().Class(StyleClass.PanelLight).Panel(boxLight),
             E<PanelContainer>().Class(StyleClass.PanelDark).Panel(boxDark),
             E<PanelContainer>().Class(StyleClass.PanelDropTarget).Panel(boxDropTarget),

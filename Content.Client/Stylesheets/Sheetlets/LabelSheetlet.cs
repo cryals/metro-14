@@ -16,8 +16,18 @@ public sealed class LabelSheetlet : Sheetlet<PalettedStylesheet>
         var robotoMonoBold12 = ResCache.GetFont("/Fonts/RobotoMono/RobotoMono-Bold.ttf", size: 12);
         var robotoMonoBold14 = ResCache.GetFont("/Fonts/RobotoMono/RobotoMono-Bold.ttf", size: 14);
 
+        var puzzleSmall = ResCache.GetFont("/Fonts/VC.ttf", size: 10);
+        var puzzleRegular = ResCache.GetFont("/Fonts/VC.ttf", size: 12);
         return
         [
+            E<Label>()
+                .Class("RadioFont")
+                .Font(puzzleRegular),
+            E<Label>()
+                .Class("RadioFontSmall")
+                .Font(puzzleSmall)
+                .FontColor(Color.FromHex("#9a8542")),
+
             E<Label>()
                 .Class(StyleClass.LabelHeading)
                 .Font(sheet.BaseFont.GetFont(16, FontKind.Bold))

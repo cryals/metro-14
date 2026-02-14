@@ -21,6 +21,21 @@ public sealed partial class PowerCellSystem
             _battery.RefreshChargeRate(battery.Value.AsNullable());
     }
 
+    // Metro14 Frequency radio update
+    /// <summary>
+    /// Setup, a new draw rate for device
+    /// </summary>
+    [PublicAPI]
+    public void SetDrawRate(Entity<PowerCellDrawComponent?> ent, float newDrawRate)
+    {
+        if (!Resolve(ent, ref ent.Comp))
+            return;
+
+        ent.Comp.DrawRate = newDrawRate;
+        if (TryGetBatteryFromSlot(ent.Owner, out var battery))
+            _battery.RefreshChargeRate(battery.Value.AsNullable());
+    }
+    // Metro14 Frequency radio update
 
     /// <summary>
     /// Returns whether the entity has a slotted battery and <see cref="PowerCellDrawComponent.UseCharge"/> charge.
