@@ -34,7 +34,7 @@
     heldPrefix: walkietalkie
 
 - type: entity
-  name: рация 
+  name: рация
   suffix: Спарта
   description: Смерть в нищете...
   parent: M14RadioBase
@@ -91,4 +91,4 @@
   id: M14RadioHandheldRedLine
   components:
   - type: MetroRadioFrequency
-    frequency: 1488
+    frequency: 1489
