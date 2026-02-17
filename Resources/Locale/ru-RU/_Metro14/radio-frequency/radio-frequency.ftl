@@ -8,3 +8,6 @@ radio-frequency-ui = Частота-{$zero-digits}{$frequency}MHz
 radio-frequency-disabled-verb = включить
 radio-frequency-low-verb = переключить режим
 radio-frequency-high-verb = выключить
+
+radio-frequency-microphone-switch-tooltip = Микрофон ↓ON↓/↑OFF↑
+radio-frequency-speaker-switch-tooltip = Диктофон ↓ON↓/↑OFF↑
