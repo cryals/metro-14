@@ -15,6 +15,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: hansa_frequency
@@ -22,6 +30,9 @@
     notificationPrefix: m14-hansa-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: GanzaTaskList
+    factionName: headquarter-task-faction-ganza
 
 
 - type: entity
@@ -41,6 +52,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: vdnh_frequency
@@ -48,6 +67,9 @@
     notificationPrefix: m14-vdnh-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: VDNXTaskList
+    factionName: headquarter-task-faction-vdnx
 
 - type: entity
   parent: BaseItem
@@ -66,6 +88,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: sparta_frequency
@@ -73,6 +103,9 @@
     notificationPrefix: m14-sparta-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: SpartaTaskList
+    factionName: headquarter-task-faction-sparta
 
 - type: entity
   parent: BaseItem
@@ -91,6 +124,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: hydra_frequency
@@ -98,6 +139,9 @@
     notificationPrefix: m14-hydra-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: HydraTaskList
+    factionName: headquarter-task-faction-hydra
 
 - type: entity
   parent: BaseItem
@@ -116,6 +160,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: tech_frequency
@@ -123,6 +175,9 @@
     notificationPrefix: m14-tech-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: TechTaskList
+    factionName: headquarter-task-faction-tech
 
 - type: entity
   parent: BaseItem
@@ -141,6 +196,14 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.HeadquarterTaskUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HeadquarterTaskUiKey.Key:
+        type: HeadquarterTaskConsoleBoundUserInterface
   - type: Speech
   - type: CommandPhones
     frequence: redline_frequency
@@ -148,3 +211,6 @@
     notificationPrefix: m14-redline-text
     verb: prayer-verbs-call
     verbImage: null
+  - type: HeadquarterTaskGiver
+    group: RedLineTaskList
+    factionName: headquarter-task-faction-red-line

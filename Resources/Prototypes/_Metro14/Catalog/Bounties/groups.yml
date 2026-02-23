@@ -1,0 +1,20 @@
+- type: headquarterTaskGroup
+  id: HeadquarterTaskDefault
+
+- type: headquarterTaskGroup
+  id: GanzaTaskList
+
+- type: headquarterTaskGroup
+  id: VDNXTaskList
+
+- type: headquarterTaskGroup
+  id: SpartaTaskList
+
+- type: headquarterTaskGroup
+  id: HydraTaskList
+
+- type: headquarterTaskGroup
+  id: TechTaskList
+
+- type: headquarterTaskGroup
+  id: RedLineTaskList

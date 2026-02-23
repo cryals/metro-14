@@ -1,0 +1,85 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'headquarter-task-console-menu-title'}"
+                      SetSize="550 420"
+                      MinSize="400 350">
+    <BoxContainer Orientation="Vertical"
+                  VerticalExpand="True"
+                  HorizontalExpand="True">
+        <PanelContainer VerticalExpand="True" HorizontalExpand="True" Margin="10">
+            <PanelContainer.PanelOverride>
+                <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+            </PanelContainer.PanelOverride>
+            <BoxContainer Orientation="Vertical"
+                          VerticalExpand="True"
+                          HorizontalExpand="True">
+                <BoxContainer Name="TaskListUI"
+                              VerticalExpand="True"
+                              HorizontalExpand="True">
+                    <TabContainer Name="MasterTabContainer" VerticalExpand="True" HorizontalExpand="True">
+                        <ScrollContainer HScrollEnabled="False"
+                                         HorizontalExpand="True"
+                                         VerticalExpand="True">
+                            <BoxContainer Name="TaskEntriesContainer"
+                                          Orientation="Vertical"
+                                          VerticalExpand="True"
+                                          HorizontalExpand="True" />
+                        </ScrollContainer>
+                        <ScrollContainer HScrollEnabled="False"
+                                         HorizontalExpand="True"
+                                         VerticalExpand="True">
+                            <Label Name="NoHistoryLabel"
+                                   Text="{Loc 'headquarter-task-console-history-empty-label'}"
+                                   Visible="False"
+                                   Align="Center" />
+                            <BoxContainer Name="TaskHistoryContainer"
+                                          Orientation="Vertical"
+                                          VerticalExpand="True"
+                                          HorizontalExpand="True" />
+                        </ScrollContainer>
+                    </TabContainer>
+                </BoxContainer>
+
+                <BoxContainer Name="ActiveTaskUI"
+                              Orientation="Vertical"
+                              VerticalExpand="True"
+                              HorizontalExpand="True"
+                              Visible="False"
+                              Margin="10">
+                    <Label Text="{Loc 'headquarter-task-console-active-task-title'}"
+                           HorizontalAlignment="Center" />
+                    <ScrollContainer HScrollEnabled="False"
+                                     HorizontalExpand="True"
+                                     VerticalExpand="True">
+                        <BoxContainer Name="ActiveTaskEntryContainer"
+                                      Orientation="Vertical"
+                                      VerticalExpand="True"
+                                      HorizontalExpand="True" />
+                    </ScrollContainer>
+                    <PanelContainer StyleClasses="LowDivider" />
+                    <BoxContainer Orientation="Horizontal"
+                                  Margin="0 8 0 0"
+                                  SeparationOverride="8">
+                        <Button Name="CancelTaskButton"
+                                Text="{Loc 'headquarter-task-console-cancel-task-button'}"
+                                HorizontalExpand="True" />
+                        <Button Name="SubmitReportButton"
+                                Text="{Loc 'headquarter-task-console-submit-report-button'}"
+                                HorizontalExpand="True" />
+                    </BoxContainer>
+                </BoxContainer>
+            </BoxContainer>
+        </PanelContainer>
+        <BoxContainer Orientation="Vertical">
+            <PanelContainer StyleClasses="LowDivider" />
+            <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">
+                <Label Text="{Loc 'headquarter-task-console-flavor-left'}" StyleClasses="WindowFooterText" />
+                <Label Text="{Loc 'headquarter-task-console-flavor-right'}" StyleClasses="WindowFooterText"
+                       HorizontalAlignment="Right" HorizontalExpand="True" Margin="0 0 5 0" />
+                <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
+                             VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19" />
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>
