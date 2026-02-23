@@ -38,3 +38,11 @@
   materials:
     Steel: 1850
     Plasteel: 800
+
+- type: latheRecipe
+  id: M14bastard
+  result: M14bastard
+  completetime: 3
+  materials:
+    Steel: 890
+    Wood: 200
