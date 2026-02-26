@@ -233,7 +233,7 @@
         Slash: 0.2
         Piercing: 0.2
         Heat: 0.5
-        Radiation: 0
+        Radiation: 0.2
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.7
@@ -258,10 +258,9 @@
     modifiers:
       coefficients:
         Blunt: 0.6
-        Slash: 0.3
-        Piercing: 0.3
+        Slash: 0.4
+        Piercing: 0.34
         Heat: 0.6
-        Radiation: 0
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.7

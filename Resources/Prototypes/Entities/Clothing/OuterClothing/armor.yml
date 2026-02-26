@@ -24,6 +24,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
 
+
+
 #Standard armor vest, allowed for security and bartenders
 - type: entity
   parent: [ BaseSecurityBartenderContraband, ClothingOuterArmorBase]

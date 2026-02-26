@@ -1,0 +1,196 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: Skaven
+  limits:
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Chest:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.Snout:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Special:
+      limit: 0
+      required: false
+
+- type: species
+  id: Skaven
+  name: Скавен
+  roundStart: true
+  prototype: MobSkaven
+  dollPrototype: AppearanceSkaven
+  skinColoration: HumanToned
+  minAge: 15
+  youngAge: 25
+  oldAge: 39
+  maxAge: 65
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceSkaven
+  name: skaven appearance
+  components:
+  - type: HumanoidProfile
+    species: Skaven
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+  - type: InitialBody
+    organs:
+      Torso: OrganSkavenTorso
+      Head: OrganSkavenHead
+      ArmLeft: OrganSkavenArmLeft
+      ArmRight: OrganSkavenArmRight
+      HandRight: OrganSkavenHandRight
+      HandLeft: OrganSkavenHandLeft
+      LegLeft: OrganSkavenLegLeft
+      LegRight: OrganSkavenLegRight
+      FootLeft: OrganSkavenFootLeft
+      FootRight: OrganSkavenFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+
+- type: entity
+  parent: OrganBase
+  id: OrganSkaven
+  abstract: true
+  suffix: Skaven
+
+- type: entity
+  id: OrganSkavenVisual
+  abstract: true
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _Metro14/Species/Skaven/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Skaven
+
+- type: entity
+  parent: [ OrganSkaven, OrganSkavenVisual ]
+  id: OrganSkavenExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSkavenExternal ]
+  id: OrganSkavenTorso
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseHead, OrganSkavenExternal ]
+  id: OrganSkavenHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.HeadTop
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSkavenExternal ]
+  id: OrganSkavenArmLeft
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSkavenExternal ]
+  id: OrganSkavenArmRight
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSkavenExternal ]
+  id: OrganSkavenHandLeft
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSkavenExternal ]
+  id: OrganSkavenHandRight
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSkavenExternal ]
+  id: OrganSkavenLegLeft
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSkavenExternal ]
+  id: OrganSkavenLegRight
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSkavenExternal ]
+  id: OrganSkavenFootLeft
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSkavenExternal ]
+  id: OrganSkavenFootRight
+  components:
+  - type: Sprite
+    sprite: _Metro14/Species/Skaven/parts.rsi
