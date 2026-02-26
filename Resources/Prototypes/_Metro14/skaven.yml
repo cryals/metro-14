@@ -1,0 +1,33 @@
+- type: entity
+  id: MobSkaven
+  parent:
+  - BaseSpeciesMobOrganic
+  - AppearanceSkaven
+  name: Urist McSkaven
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
+  - type: Stamina
+    critThreshold: 400
+  - type: MovementSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.25
+  - type: Bloodstream
+    bloodReagent: Blood
+  - type: Vocal
+    sounds:
+      Male: MaleHuman
+      Female: FemaleHuman
+      Unsexed: MaleHuman
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatHuman
+      amount: 4
+  - type: Icon
+    sprite: Mobs/Species/Skaven/parts.rsi
+    state: full
+  - type: Sprite
+    scale: 0.9, 0.9

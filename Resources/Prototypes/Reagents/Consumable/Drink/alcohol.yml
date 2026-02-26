@@ -410,6 +410,10 @@
   metabolisms:
     Drink:
       effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -0.5
       - !type:SatiateThirst
         factor: 2
       - !type:AdjustReagent
