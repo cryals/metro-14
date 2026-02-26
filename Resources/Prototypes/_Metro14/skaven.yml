@@ -27,7 +27,7 @@
     - id: FoodMeatHuman
       amount: 4
   - type: Icon
-    sprite: Mobs/Species/Skaven/parts.rsi
+    sprite: _Metro14/Species/Skaven/parts.rsi
     state: full
   - type: Sprite
     scale: 0.9, 0.9
