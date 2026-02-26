@@ -11,12 +11,11 @@
       80: Critical
       160: Dead
   - type: Stamina
-    critThreshold: 400
+    BaseCritThreshold: 400
   - type: MovementSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.25
-  - type: Bloodstream
-    bloodReagent: Blood
+    baseWeightlessAcceleration: 1.6 # Move around more easily in space.
+    baseWeightlessFriction: 1.3
+    baseWeightlessModifier: 1.2
   - type: Vocal
     sounds:
       Male: MaleHuman
@@ -27,7 +26,7 @@
     - id: FoodMeatHuman
       amount: 4
   - type: Icon
-    sprite: Mobs/Species/Skaven/parts.rsi
+    sprite: _Metro14/Species/Skaven/parts.rsi
     state: full
   - type: Sprite
     scale: 0.9, 0.9
