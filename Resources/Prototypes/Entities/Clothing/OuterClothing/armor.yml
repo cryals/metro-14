@@ -24,31 +24,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
 
-- type: entity
-  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
-  id: ClothingOuterArmorAblative
-  name: ablative armor
-  description: Absorbs incoming damage until its plating gives out.
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Armor/security.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Armor/security.rsi
-  - type: DamageTransferArmor
-  - type: Damageable
-  - type: ExaminableDamage
-    messages: ShieldMessages
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
+
 
 #Standard armor vest, allowed for security and bartenders
 - type: entity
