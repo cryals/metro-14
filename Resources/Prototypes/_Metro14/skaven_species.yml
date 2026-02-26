@@ -52,7 +52,6 @@
   id: Skaven
   name: Скавен
   roundStart: true
-  sponsorOnly: false
   prototype: MobSkaven
   dollPrototype: AppearanceSkaven
   skinColoration: HumanToned

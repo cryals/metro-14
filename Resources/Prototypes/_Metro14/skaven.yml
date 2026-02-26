@@ -11,7 +11,7 @@
       80: Critical
       160: Dead
   - type: Stamina
-    BaseCritThreshold: 400
+    baseCritThreshold: 400
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.6 # Move around more easily in space.
     baseWeightlessFriction: 1.3
