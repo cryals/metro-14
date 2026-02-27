@@ -1,107 +1,105 @@
 - type: headquarterTask
   id: M14TaskGanzaTestBread
   group: GanzaTaskList
-  name: bounty-item-bread
-  description: bounty-description-bread
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв 
 
 - type: headquarterTask
   id: M14TaskGanzaTestCuffs
   group: GanzaTaskList
-  name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskGanzaTestInstruments
   group: GanzaTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskVDNXTestBread
-  group: VDNXTaskList
-  name: bounty-item-bread
-  description: bounty-description-bread
-
+  group: Раздобыть части мутантов
+  name: Раздобыть провизии
+  description: Необходимо раздобыть 40 частей мутантов
 - type: headquarterTask
   id: M14TaskVDNXTestCuffs
   group: VDNXTaskList
   name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskVDNXTestInstruments
   group: VDNXTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestBread
   group: SpartaTaskList
-  name: bounty-item-bread
-  description: bounty-description-bread
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestCuffs
   group: SpartaTaskList
-  name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestInstruments
   group: SpartaTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestBread
   group: HydraTaskList
-  name: bounty-item-bread
-  description: bounty-description-bread
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestCuffs
   group: HydraTaskList
-  name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestInstruments
   group: HydraTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestBread
   group: TechTaskList
   name: bounty-item-bread
-  description: bounty-description-bread
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestCuffs
   group: TechTaskList
-  name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestInstruments
   group: TechTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
-
+  name: Раздобыть гранаты
+  description: Необходимо раздобыть 5 гранат разных типов
 - type: headquarterTask
   id: M14TaskRedLineTestBread
   group: RedLineTaskList
-  name: bounty-item-bread
-  description: bounty-description-bread
+  name: Раздобыть брони для Генштаба
+  description: Необходимо раздобыть 5 единиц брони для генштаба
 
 - type: headquarterTask
   id: M14TaskRedLineTestCuffs
   group: RedLineTaskList
-  name: bounty-item-handcuffs
-  description: bounty-description-handcuffs
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskRedLineTestInstruments
   group: RedLineTaskList
-  name: bounty-item-instrument
-  description: bounty-description-instrument
+  name: Раздобыть наручники
+  description: Необходимо раздобыть 7 наручников
