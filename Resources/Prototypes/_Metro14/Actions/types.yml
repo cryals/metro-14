@@ -65,7 +65,7 @@
   description: Усыпляет всех существ в радиусе 5 тайлов на 10 секунд
   components:
   - type: Action
-    useDelay: 30
+    useDelay: 100
     itemIconStyle: BigAction
     icon: _Metro14/Interface/Actions/SpecialAbilities/sleep.png
     checkCanInteract: false
@@ -142,7 +142,7 @@
   description: Люди в пределах 10 тайлов от вас начинают нести бред
   components:
   - type: Action
-    useDelay: 35
+    useDelay: 16
     itemIconStyle: BigAction
     icon: _Metro14/Interface/Actions/SpecialAbilities/hallucinations.png
     checkCanInteract: false

@@ -1,0 +1,22 @@
+- type: entity
+  parent: FoodSnackBase
+  id: FoodAbilityPoint
+  name: ability ration
+  description: A dense bite of concentrated power.
+  components:
+  - type: Sprite
+    state: cnds
+  - type: Item
+    heldPrefix: cnds
+  - type: Edible
+    transferAmount: 1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: AbilityPointOnIngest
+    currency: AbilityPoint
+    amount: 1

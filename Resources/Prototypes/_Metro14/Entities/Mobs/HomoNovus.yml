@@ -13,6 +13,14 @@
   - type: Physics
   - type: MobState
   - type: Hands
+    hands:
+      hand_right:
+        location: Right
+      hand_left:
+        location: Left
+    sortedHands:
+    - hand_right
+    - hand_left
   - type: ComplexInteraction
   - type: ContainerContainer
   - type: Appearance
@@ -35,7 +43,7 @@
   - type: GhostTakeoverAvailable
   - type: GhostRole
     makeSentient: true
-    allowSpeech: false
+    allowSpeech: true
     allowMovement: false
     name: Новый человек
     description: Homo novus - это разумные, человекоподобные мутанты с чёрной блестящей кожей и крупными глазами, обладающие телепатическими способностями, которых люди считают врагами.
@@ -54,6 +62,11 @@
       collection: FootstepThud
   - type: Body
   - type: SpecialAbilities
+  - type: PointLight
+    netsync: false
+    radius: 12
+    castShadows: false
+    enabled: false
   - type: PassiveDamage
     allowedStates:
     - Alive

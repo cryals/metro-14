@@ -1,0 +1,32 @@
+- type: entity
+  parent: ActionIntrinsicStore
+  id: ActionAbilityAntagShop
+  name: Store
+  description: Opens the ability store.
+
+- type: entity
+  parent: BaseAction
+  id: ActionAbilityAntagKnockout
+  name: Knockout
+  description: Select a target and knock them out.
+  components:
+  - type: Action
+    useDelay: 15
+    itemIconStyle: BigAction
+    icon: Interface/Actions/disarm.png
+  - type: TargetAction
+  - type: EntityTargetAction
+    event: !type:AbilityAntagKnockoutActionEvent
+
+- type: entity
+  parent: BaseAction
+  id: ActionAbilityAntagAblative
+  name: Ablative Armor
+  description: Conjure ablative armor into your hands.
+  components:
+  - type: Action
+    useDelay: 30
+    itemIconStyle: BigAction
+    icon: { sprite: Clothing/OuterClothing/Armor/security.rsi, state: icon }
+  - type: InstantAction
+    event: !type:AbilityAntagAblativeActionEvent

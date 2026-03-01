@@ -1,0 +1,32 @@
+- type: entity
+  id: MobAbilityAntagonist
+  name: ability antagonist
+  description: A hostile figure empowered by stolen abilities.
+  parent: MobHuman
+  components:
+  - type: RandomHumanoidAppearance
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-ability-antag-name
+    description: ghost-role-information-ability-antag-description
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: AbilityAntagonist
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActionGrant
+    actions:
+    - ActionAbilityAntagShop
+  - type: Store
+    categories:
+    - AbilityAntagAbilities
+    currencyWhitelist:
+    - AbilityPoint
