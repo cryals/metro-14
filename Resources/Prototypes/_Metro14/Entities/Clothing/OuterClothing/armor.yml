@@ -305,3 +305,28 @@
   - type: Clothing
     sprite: _Metro14/Clothing/OuterClothing/Armor/sparta_reconnaissance.rsi
 
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorAblative
+  name: Штурмовая абилитивная броня
+  description: Поглощает наносимый урон до тех пор, пока его покрытие не выйдет из строя. Выдержит десяток выстрелов с ак-74
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: DamageTransferArmor
+  - type: Damageable
+  - type: ExaminableDamage
+    messages: ShieldMessages
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
