@@ -1,0 +1,38 @@
+- type: listing
+  id: AbilityAntagKnockout
+  name: ability-antag-knockout-name
+  description: ability-antag-knockout-desc
+  productAction: ActionAbilityAntagKnockout
+  cost:
+    AbilityPoint: 1
+  categories:
+  - AbilityAntagAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: AbilityAntagSmoke
+  name: ability-antag-smoke-name
+  description: ability-antag-smoke-desc
+  productAction: ActionSmoke
+  cost:
+    AbilityPoint: 1
+  categories:
+  - AbilityAntagAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: AbilityAntagAblative
+  name: ability-antag-ablative-name
+  description: ability-antag-ablative-desc
+  productAction: ActionAbilityAntagAblative
+  cost:
+    AbilityPoint: 1
+  categories:
+  - AbilityAntagAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

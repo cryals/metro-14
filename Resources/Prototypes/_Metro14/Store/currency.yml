@@ -1,0 +1,4 @@
+- type: currency
+  id: AbilityPoint
+  displayName: store-currency-display-ability-point
+  canWithdraw: false
