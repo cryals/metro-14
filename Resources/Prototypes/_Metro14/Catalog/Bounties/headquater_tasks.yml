@@ -2,19 +2,19 @@
   id: M14TaskGanzaTestBread
   group: GanzaTaskList
   name: Раздобыть провизии
-  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 5 консерв,10 стейков,3 овсянки,а также 5 единиц с высокой питательностью 
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв 
 
 - type: headquarterTask
   id: M14TaskGanzaTestCuffs
   group: GanzaTaskList
-  name: Раздобыть мутантов
-  description: Необходимо раздобыть 55 частей любых мутантов.
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskGanzaTestInstruments
   group: GanzaTaskList
-  name: Наладить быт
-  description: Набрать персонал на станцию и обеспечить их работой. 3 персоны
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskVDNXTestBread
@@ -25,61 +25,61 @@
   id: M14TaskVDNXTestCuffs
   group: VDNXTaskList
   name: bounty-item-handcuffs
-  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 20 консерв
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskVDNXTestInstruments
   group: VDNXTaskList
-  name: Торговля
-  description: Наладить торговлю питанием с Ганзой
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestBread
   group: SpartaTaskList
-  name: Провести общую проверку метро
-  description: Проверить есть ли в метро ленточники или другие угрозы человечеству
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestCuffs
   group: SpartaTaskList
-  name: Спасти
-  description: Оказать помощь 8 людям. Собрать подписи с них в один лист
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskSpartaTestInstruments
   group: SpartaTaskList
-  name: Предотвратить войну
-  description: Опциональное задание, разрешено исключительно дипломатическое вмешательство.
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestBread
   group: HydraTaskList
   name: Раздобыть провизии
-  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 30 консерв
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestCuffs
   group: HydraTaskList
-  name: Проверка
-  description: Найти 3 ген. мутантов и доставить их на базу.
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskHydraTestInstruments
   group: HydraTaskList
-  name: Диверсия
-  description: Используя исключительно внутренние ресурсы, например в шкафчике у фюрера - совершить диверсию в красной линии. Скрытно
+  name: Раздобыть провизии
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestBread
   group: TechTaskList
-  name: Хлеб
-  description: Сделать 9 батонов хлеба
+  name: bounty-item-bread
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestCuffs
   group: TechTaskList
   name: Раздобыть провизии
-  description: Необходимо раздобыть 45 пустых консерв. Генштаб переработает их в сталь
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskTechTestInstruments
@@ -89,17 +89,17 @@
 - type: headquarterTask
   id: M14TaskRedLineTestBread
   group: RedLineTaskList
-  name: Диверсия
-  description: Совершить скрытную диверсию на подконтрольной территории Гидре. Скрытно
+  name: Раздобыть брони для Генштаба
+  description: Необходимо раздобыть 5 единиц брони для генштаба
 
 - type: headquarterTask
   id: M14TaskRedLineTestCuffs
   group: RedLineTaskList
   name: Раздобыть провизии
-  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 9 консерв
+  description: Необходимо раздобыть провизии для питания станции и будущего подкрепления. 50 консерв
 
 - type: headquarterTask
   id: M14TaskRedLineTestInstruments
   group: RedLineTaskList
-  name: Обратить
-  description: Необходимо рекрутировать 5 людей в красную линию. Форма предоставлена.
+  name: Раздобыть наручники
+  description: Необходимо раздобыть 7 наручников
