@@ -1,0 +1,9 @@
+- type: startingGear
+  id: M14CultistGear
+  equipment:
+    jumpsuit: M14ClothingUniformCult
+    back: ClothingBackpack
+    head: M14ClothingHeadHelmetCult
+    outerClothing: M14ClothingOuterRobesCult
+    shoes: ClothingShoesCult
+    gloves: ClothingHandsGlovesCombat

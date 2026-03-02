@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: M14ClothingOuterRobesCult
+  name: роба культиста
+  description: Странная роба, на которой видны руны...
+  components:
+  - type: Sprite
+    sprite: _Metro14/Clothing/OuterClothing/Misc/cultrobes.rsi
+  - type: Clothing
+    sprite: _Metro14/Clothing/OuterClothing/Misc/cultrobes.rsi

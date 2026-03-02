@@ -1,0 +1,21 @@
+## Base cultist
+
+- type: entity
+  id: M14RandomHumanoidSpawnerCultist
+  name: Культист
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - type: RandomHumanoidSpawner
+      settings: M14Cultist
+
+- type: randomHumanoidSettings
+  id: M14Cultist
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: RandomHumanoidSpeciesRestrictions
+      speciesWhitelist: [ Human ]
+    - type: Loadout
+      prototypes: [M14CultistGear]
