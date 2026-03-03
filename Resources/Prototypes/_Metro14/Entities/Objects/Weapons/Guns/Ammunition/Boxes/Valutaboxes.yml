@@ -5,7 +5,7 @@
   suffix: Big
   components:
   - type: BallisticAmmoProvider
-    capacity: 150
+    capacity: 155
     proto: CartridgeLightRifle
   - type: Sprite
     layers:
