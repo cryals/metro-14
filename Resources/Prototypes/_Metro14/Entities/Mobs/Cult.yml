@@ -15,7 +15,5 @@
   components:
     - type: RandomHumanoidAppearance
       randomizeName: true
-    - type: RandomHumanoidSpeciesRestrictions
-      speciesWhitelist: [ Human ]
     - type: Loadout
       prototypes: [M14CultistGear]
