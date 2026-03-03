@@ -62,7 +62,7 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
-      
+
 - type: entity
   parent: M14ClothingHeadHelmetHeavy
   id: M14ClothingHeadHelmetSparta
@@ -80,7 +80,7 @@
 - type: entity
   parent: M14ClothingHeadHelmetHeavy
   id: M14ClothingHeadHelmetHeavyRed
-  name: шлем 
+  name: шлем
   description: шлем бойцов красной линии.
   components:
   - type: Sprite
@@ -112,3 +112,19 @@
       Hair: HEAD
   - type: IngestionBlocker
   - type: IdentityBlocker
+
+# Cult helmet
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: M14ClothingHeadHelmetCult
+  name: шлем культиста
+  description: Тяжёлый шлем культиста, который покрыт странными рунами.
+  components:
+  - type: Sprite
+    sprite: _Metro14/Clothing/Head/Helmets/cult.rsi
+  - type: Clothing
+    sprite: _Metro14/Clothing/Head/Helmets/cult.rsi
+  - type: IngestionBlocker
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
